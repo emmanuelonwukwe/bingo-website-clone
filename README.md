@@ -5,11 +5,11 @@
 # original website
 
 <figure>
-    <img src="/images/bingo-screen-shot-1.png">
+    <img src="public/images/bingo-screen-shot-1.png">
     <figcaption>Homepage Screen shot</figcaption>
 </figure>
 
 <figure>
-    <img src="/images/bingo-screen-shot-2.png">
+    <img src="public/images/bingo-screen-shot-2.png">
     <figcaption>Error 404 Screen shot</figcaption>
 </figure>
