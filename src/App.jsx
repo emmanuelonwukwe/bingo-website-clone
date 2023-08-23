@@ -16,7 +16,6 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
 
-  
   return (
     <>
       {/* Fixed Navigation ========== */}

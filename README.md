@@ -1,8 +1,15 @@
-# React + Vite
+# Clone Bingo website project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- The aim of this project is to identify some components of the original website and make a relicated clone of it.
 
-Currently, two official plugins are available:
+# original website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<figure>
+    <img src="/images/bingo-screen-shot-1.png">
+    <figcaption>Homepage Screen shot</figcaption>
+</figure>
+
+<figure>
+    <img src="/images/bingo-screen-shot-2.png">
+    <figcaption>Error 404 Screen shot</figcaption>
+</figure>
