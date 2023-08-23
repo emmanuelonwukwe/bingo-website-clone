@@ -13,3 +13,17 @@
     <img src="public/images/bingo-screen-shot-2.png">
     <figcaption>Error 404 Screen shot</figcaption>
 </figure>
+
+<hr>
+
+# Cloned website
+
+<figure>
+    <img src="public/images/cloned-screenshot-1.png">
+    <figcaption>Homepage Screen shot</figcaption>
+</figure>
+
+<figure>
+    <img src="public/images/cloned-screenshot-2.png">
+    <figcaption>Error 404 Screen shot</figcaption>
+</figure>
