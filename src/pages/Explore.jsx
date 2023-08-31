@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-
-export default function Login() {
+export default function Explore() {
   return (
     <>
       <section className="section text-center">
@@ -8,12 +6,9 @@ export default function Login() {
           <div className="row">
             <div className="col-12">
               <h3>
-                Hey! The <span className="text-green">Login page</span> is not
+                Hey! The <span className="text-green">Explore page</span> is not
                 yet ready.
               </h3>
-              <Link to="/" className="btn btn-main mt-20">
-                Go Home
-              </Link>
             </div>
           </div>
         </div>

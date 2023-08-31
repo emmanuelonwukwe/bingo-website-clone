@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
     
   return (
@@ -7,7 +9,7 @@ function Header() {
           {/* main nav */}
           <nav className="navbar navbar-expand-lg navbar-light px-0">
             {/* logo */}
-            <a className="navbar-brand logo" href="index">
+            <Link className="navbar-brand logo" href="/">
               <img
                 loading="lazy"
                 className="logo-default"
@@ -20,7 +22,7 @@ function Header() {
                 src="/images/logo-white.png"
                 alt="logo"
               />
-            </a>
+            </Link>
             {/* /logo */}
             <button
               className="navbar-toggler"
@@ -52,14 +54,14 @@ function Header() {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a className="dropdown-item" href="index">
+                      <Link className="dropdown-item" to="/">
                         Homepage
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="onepage-slider">
+                      <Link className="dropdown-item" to="onepage-slider">
                         Onepage
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a className="dropdown-item" href="onepage-text">
@@ -97,34 +99,34 @@ function Header() {
                   </ul>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link" href="about">
+                  <Link className="nav-link" to="about">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link" href="service">
+                  <Link className="nav-link" to="services">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link" href="portfolio">
-                    Portfolio
-                  </a>
+                  <Link className="nav-link" to="explore">
+                    Explore
+                  </Link>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link" href="team">
+                  <Link className="nav-link" to="team">
                     Team
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link" href="pricing">
+                  <Link className="nav-link" to="pricing">
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link" href="contact">
+                  <Link className="nav-link" to="contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
                   <a

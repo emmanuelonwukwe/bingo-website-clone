@@ -71,3 +71,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.text-green{
+  color:rgb(84, 119, 84);
+}

@@ -10,6 +10,7 @@ import AwardCountItem from "../components/AwardCountItem.jsx";
 import TestimonyItem from "../components/TestimonyItem.jsx";
 import { Carousel } from "@trendyol-js/react-carousel";
 import BlogPostItem from "../components/BlogPostItem.jsx";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -40,15 +41,15 @@ function Home() {
                   Quod, <br /> veritatis tempore nostrum id officia quaerat eum
                   corrupti, <br /> ipsa aliquam velit.
                 </p>
-                <a
+                <Link
                   data-duration-in=".3"
                   data-animation-in="fadeInUp"
                   data-delay-in=".8"
                   className="btn btn-main"
-                  href="service"
+                  to="login"
                 >
-                  Explore Us
-                </a>
+                  Login Now
+                </Link>
               </div>
             </div>
           </div>
