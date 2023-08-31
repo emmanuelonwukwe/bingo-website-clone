@@ -1,4 +1,9 @@
+import GreetingContext from "../GreetingContext";
+import { useContext } from "react";
+
 export default function Services() {
+    const greet = useContext(GreetingContext);
+
   return (
     <>
       <section className="section text-center">
@@ -6,7 +11,7 @@ export default function Services() {
           <div className="row">
             <div className="col-12">
               <h3>
-                Hey! The <span className="text-green">Services page</span> is not
+                {greet} <span className="text-green">Services page</span> is not
                 yet ready.
               </h3>
             </div>

@@ -1,7 +1,10 @@
 import { useLoaderData } from "react-router-dom";
+import GreetingContext from "../GreetingContext";
+import { useContext } from "react";
 
 export function Contact() {
-    const contactList = useLoaderData();
+  const contactList = useLoaderData();
+  const greet = useContext(GreetingContext);
 
   return (
     <>
@@ -10,7 +13,7 @@ export function Contact() {
           <div className="row">
             <div className="col-12">
               <h3>
-                Hey! The <span className="text-green">Contact page</span> is not
+                {greet} <span className="text-green">Contact page</span> is not
                 yet ready.
               </h3>
               <p>{JSON.stringify(contactList)}</p>
@@ -28,13 +31,13 @@ export async function loadContacts({ params }) {
     {
       username: "admin",
       password: 1122,
-      contacts: ["09087674674", "081227846", "234685688"]
+      contacts: ["09087674674", "081227846", "234685688"],
     },
     {
-        username: "user",
-        password: 1234,
-        contacts: ["87979490400", "6839048840", "662889300998"]
-    }
+      username: "user",
+      password: 1234,
+      contacts: ["87979490400", "6839048840", "662889300998"],
+    },
   ];
 
   let contactList = [];
@@ -42,7 +45,7 @@ export async function loadContacts({ params }) {
 
   usersList.forEach((user) => {
     if (user["username"] == setUsername) {
-        contactList = user["contacts"];
+      contactList = user["contacts"];
     }
   });
 

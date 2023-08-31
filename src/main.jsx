@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import Services from "./pages/Services";
 import "./index.css";
 import { Contact, loadContacts } from "./pages/Contact.jsx";
+import GreetingContext from "./GreetingContext.js";
 
 const router = createBrowserRouter([
   {
@@ -46,9 +47,15 @@ const router = createBrowserRouter([
   }
 ]);
 
+//Data to be passed globally to all the pages
+const greetting = "Hey! dear,";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    {/** Pass the message to all the route pages */}
+    <GreetingContext.Provider value={greetting} >
+      <RouterProvider router={router} />
+    </GreetingContext.Provider>
   </React.StrictMode>
 );
